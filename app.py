@@ -42,12 +42,12 @@ def scrap_page():
         channel_handle = request.form['search'].replace(" ","")
         logging.info(f"User entered channel handle : {channel_handle}")
         yt_url = f"https://www.youtube.com/@{channel_handle}/videos"
-        chrome_options = Options()
-        chrome_options.add_argument("--headless")
-        chrome_options.add_argument("--disable-gpu")
-        chrome_options.add_argument("--no-sandbox")
-        chrome_options.add_argument("--disable-dev-shm-usage")
-        driver = webdriver.Chrome(options=chrome_options)
+        # chrome_options = Options()
+        # chrome_options.add_argument("--headless")
+        # chrome_options.add_argument("--disable-gpu")
+        # chrome_options.add_argument("--no-sandbox")
+        # chrome_options.add_argument("--disable-dev-shm-usage")
+        driver = webdriver.Chrome()
         driver.get(yt_url)
 
         logging.info("Entering to container which has entire data")
