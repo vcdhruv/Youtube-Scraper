@@ -1,6 +1,6 @@
 # YouTube Channel Video Scraper
 
-**YouTube Channel Video Scraper** is a web application that allows users to scrape video data from any YouTube channel. This application uses Selenium for browser automation and BeautifulSoup for HTML parsing to gather and display information such as video titles, links, views, and upload times.
+**YouTube Channel Video Scraper** is a web application that allows users to scrape video data from any YouTube channel. This application uses Selenium for browser automation to gather and display information such as video titles, links, views, and upload times.
 
 ## Features
 
@@ -23,5 +23,12 @@
 If you have a GitHub account and Git installed, you can clone the repository using the following command:
 
 ```bash
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/vcdhruv/Youtube-Scraper.git
 cd your-repository
+
+```bash
+If you do not have a GitHub account or prefer not to use Git, you can download the project as a ZIP file:
+
+1. Visit the [github.com](https://github.com/vcdhruv/Youtube-Scraper.git) on GitHub.
+2. Click on the "Code" button.
+3. Select "Download ZIP" and extract the contents to your local machine.
