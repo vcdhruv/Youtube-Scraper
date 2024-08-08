@@ -21,57 +21,72 @@
 ### Clone the Repository
 
 If you have a GitHub account and Git installed, you can clone the repository using the following command:
-
-```bash
 git clone https://github.com/vcdhruv/Youtube-Scraper.git
 cd your-repository
 
+### No GitHub Account or Prefer Not to Use Git
+
 If you do not have a GitHub account or prefer not to use Git, you can download the project as a ZIP file:
 
-Visit the repository page on GitHub.
-Click the "Code" button.
-Choose "Download ZIP" and extract the contents to your local machine.
-Set Up the Environment
-Install Python: Verify Python 3.x installation by running python --version or python3 --version in your terminal.
+1. **Visit the Repository Page**: Go to the [repository page on GitHub](https://github.com/vcdhruv/Youtube-Scraper).
 
-Create a Virtual Environment:
+2. **Download as ZIP**:
+   - Click the "Code" button.
+   - Choose "Download ZIP."
+   - Extract the contents to your local machine.
 
-bash
-Copy code
-python -m venv env
-Activate the Virtual Environment:
+### Set Up the Environment
 
-On Windows:
+1. **Install Python**: Ensure Python 3.x is installed on your system. Verify the installation by running:
+   python --version
 
-bash
-Copy code
-env\Scripts\activate
-On macOS/Linux:
 
-bash
-Copy code
-source env/bin/activate
-Install Dependencies:
+### Create a Virtual Environment
 
-bash
-Copy code
-pip install -r requirements.txt
-Install Web Browser Driver: Ensure you have the appropriate driver installed (e.g., ChromeDriver) and that it is available in your system's PATH.
+Run the following command to create a virtual environment:
 
-Running the Application
-Start the Flask Application:
+`python -m venv env`
 
-bash
-Copy code
-python app.py
-Access the Web Interface: Open a web browser and navigate to http://127.0.0.1:5000/ to use the application.
+### Activate the Virtual Environment
 
-Usage
-On the homepage, enter a YouTube channel handle (e.g., PW-Foundation) into the search box and click "Submit."
-The application will fetch and display a list of videos from the specified channel, including titles, video links, view counts, and upload times.
-Troubleshooting
-No Data Returned: If no data is returned or an error occurs, verify that the channel handle is correct and that the channel has public videos.
-Python Not Installed: If Python is not installed, download and install it from python.org. Follow the installation instructions for your operating system.
-Missing Dependencies: If you encounter issues with missing modules, ensure you have activated the virtual environment and installed all dependencies using pip install -r requirements.txt.
-Contributing
+- **On Windows:**
+
+  `env\Scripts\activate`
+
+- **On macOS/Linux:**
+
+  `source env/bin/activate`
+
+### Install Dependencies
+
+Install the required dependencies by running:
+
+`pip install -r requirements.txt`
+
+### Install Web Browser Driver
+
+Ensure you have the appropriate driver installed (e.g., ChromeDriver) and that it is available in your system's PATH.
+
+### Running the Application
+
+Start the Flask application with:
+
+`python app.py`
+
+Access the web interface by opening a web browser and navigating to [http://127.0.0.1:5000/](http://127.0.0.1:5000/).
+
+### Usage
+
+1. On the homepage, enter a YouTube channel handle into the search box without @ and click "Search."
+2. The application will fetch and display a list of videos from the specified channel, including titles, video links, view counts, and upload times.
+
+### Troubleshooting
+
+- **No Data Returned**: If no data is returned or an error occurs, verify that the channel handle is correct and that the channel has public videos.
+- **Python Not Installed**: If Python is not installed, download and install it from [python.org](https://www.python.org/). Follow the installation instructions for your operating system.
+- **Missing Dependencies**: If you encounter issues with missing modules, ensure you have activated the virtual environment and installed all dependencies using `pip install -r requirements.txt`.
+
+### Contributing
+
 Feel free to fork this repository and submit pull requests. Contributions are welcome!
+
